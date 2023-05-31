@@ -17,12 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-
-    - name: Build with Gradle
-      run: ./gradlew build
-
     - name: Build and Push
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
